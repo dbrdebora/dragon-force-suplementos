@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Force Suplementos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topo">
+    <img src="img/logo-dragon.jpeg" alt="Dragon Force Suplementos" class="logo">
+    <h1>DRAGON FORCE <span>SUPLEMENTOS</span></h1>
+    <p class="cidade">📍 Entregamos apenas em Aldeias Altas - MA</p>
+  </header>
+
+  <section class="hero">
+    <p>Força de verdade começa com o suplemento certo. 🔥</p>
+  </section>
+
+  <main class="container">
+
+    <section id="produtos">
+      <h2>Nossos produtos</h2>
+
+      <div class="grid-produtos">
+
+        <div class="produto-card">
+          <img src="img/creatina-growth.png" alt="Creatina Monohidrata">
+          <h3>Creatina Monohidrata 100g</h3>
+          <p class="preco">R$ 57,90</p>
+          <button class="btn-adicionar" data-nome="Creatina Monohidrata 100g" data-preco="57.90">
+            Adicionar ao carrinho
+          </button>
+        </div>
+
+        <div class="produto-card">
+          <img src="img/creatina-pure.png" alt="Creatina Monohidrata">
+          <h3>Creatina Pura 300g</h3>
+          <p class="preco">R$ 70,00</p>
+          <button class="btn-adicionar" data-nome="Creatina Pura 300g" data-preco="70.00">
+            Adicionar ao carrinho
+          </button>
+        </div>
+
+        <div class="produto-card">
+          <img src="img/creatina-ultra.jpg" alt="Pré-treino">
+          <h3>Creatina Ultra 300g</h3>
+          <p class="preco">R$ 70,00</p>
+          <button class="btn-adicionar" data-nome="Creatina Ultra 300g" data-preco="70.00">
+            Adicionar ao carrinho
+          </button>
+        </div>
+
+        <div class="produto-card">
+          <img src="img/creatina-3vs.jpg" alt="Pré-treino">
+          <h3>Creatina 150g</h3>
+          <p class="preco">R$ 60,00</p>
+          <button class="btn-adicionar" data-nome="Creatina 150g" data-preco="60.00">
+            Adicionar ao carrinho
+          </button>
+        </div>
+
+        <div class="produto-card">
+          <img src="img/termogenico-blackskull.png" alt="Termogênico">
+          <h3>Termogênico 120 cápsulas</h3>
+          <p class="preco">R$ 40,00</p>
+          <button class="btn-adicionar" data-nome="Termogênico 120 cápsulas" data-preco="40.00">
+            Adicionar ao carrinho
+          </button>
+        </div>
+
+      </div>
+    </section>
+    
+
+    <footer class="rodape">
+      <p>Dragon Force Suplementos © 2026</p>
+      <p>Atendimento via WhatsApp • Aldeias Altas - MA</p>
+      <p> Ari Costa!</p>
+    </footer>
+
+  </main>
+
+  <!-- Botão flutuante do carrinho: sempre visível, abre o painel lateral -->
+  <button id="btn-abrir-carrinho" class="carrinho-flutuante">
+    🛒 <span id="contador-carrinho">0</span>
+  </button>
+
+  <!-- Fundo escurecido que aparece atrás do painel, quando ele está aberto -->
+  <div id="overlay-carrinho" class="overlay"></div>
+
+  <!-- Painel lateral do carrinho (drawer) -->
+  <aside id="drawer-carrinho" class="drawer-carrinho">
+    <div class="drawer-cabecalho">
+      <h3>Seu carrinho</h3>
+      <button id="btn-fechar-carrinho" class="btn-fechar">✕</button>
+    </div>
+
+    <div id="lista-itens-carrinho" class="lista-carrinho"></div>
+
+    <div class="drawer-rodape">
+      <p>Total: R$ <span id="total-carrinho">0,00</span></p>
+      <button id="btn-finalizar">Finalizar pedido no WhatsApp</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
